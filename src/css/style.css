@@ -1,6 +1,6 @@
 body {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: var(--background-color);
 }
 
@@ -15,9 +15,14 @@ body {
   font-size: var(--font-size-medium);
 }
 
-.main-container {
+main {
   width: 100%;
   height: 100%;
+}
+
+.main-container {
+  width: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,4 +36,26 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xsmall);
+}
+
+.list__item {
+  padding: var(--spacing-medium);
+  background-color: var(--text-color);
+  cursor: grab;
+}
+
+.list__item--dragged {
+  background-color: royalblue;
+}
+
+.list__compare-button {
+  min-width: 160px;
+  min-height: 32px;
+}
+
+.correct {
+  background-color: lightgreen;
+}
+.incorrect {
+  background-color: red;
 }
