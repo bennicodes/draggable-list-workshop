@@ -6,12 +6,11 @@ body {
 
 .header {
   width: 100%;
-  padding: var(--spacing-medium) var(--spacing-large);
+  padding: 0 var(--spacing-large);
   text-align: center;
 }
 
 .header__description {
-  padding: var(--spacing-small);
   font-size: var(--font-size-medium);
 }
 

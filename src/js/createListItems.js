@@ -1,9 +1,12 @@
+import shuffleArray from "./shuffleArray.js";
 import stepsForSoftwareProject from "./stepsData.js";
 
 const createListItems = () => {
   const list = document.querySelector(".list");
   list.innerHTML = "";
-  stepsForSoftwareProject.forEach((step, index) => {
+  const shuffledArray = shuffleArray([...stepsForSoftwareProject]);
+
+  shuffledArray.forEach((step, index) => {
     const listItem = document.createElement("li");
     list.append(listItem);
     listItem.textContent = `${index + 1}. ${step}`;
@@ -19,4 +22,4 @@ const createListItems = () => {
   //   handleDragAndDrop();
 };
 
-export default createListItems
+export default createListItems;
