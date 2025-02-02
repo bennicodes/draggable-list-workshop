@@ -1,3 +1,4 @@
+import updateIndices from "./updateIndices.js";
 const handleDragAndDrop = () => {
   const list = document.querySelector(".list");
   let draggedItem = null;
@@ -13,7 +14,7 @@ const handleDragAndDrop = () => {
     if (draggedItem) {
       draggedItem = null;
       e.target.classList.remove("list__item--dragged");
-      //   updateIndices()
+      updateIndices();
     }
   });
 
